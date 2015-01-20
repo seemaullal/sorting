@@ -1,16 +1,17 @@
 var bubbleSort =  function(arr){
-	for (var i=0; i<arr.length-1; i++){
-		for (var j=0; j<arr.length-i; j++){
-			if(arr[j]>arr[j+1]){
-				var temp =  arr[j+1];
-				arr[j+1]=arr[j];
-				arr[j]=temp;
-			}
-
+	stillSwapping = true;
+	while (stillSwapping) {
+		stillSwapping =  false;
+		for (var i=0; i<arr.length-1; i++){
+				if(arr[i]>arr[i+1]){
+					var temp =  arr[i+1];
+					arr[i+1]=arr[i];
+					arr[i]=temp;
+					stillSwapping = true;
+				}
 		}
 	}
 	return arr;
-
 };
 
 var merge =  function(arr1, arr2){
