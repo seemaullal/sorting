@@ -23,12 +23,8 @@ var merge =  function(arr1, arr2){
 			answer.push(arr2.shift());
 		}
 	}
-	while(arr2.length!==0){
-		answer.push(arr2.shift());
-	}
-	while(arr1.length!==0){
-		answer.push(arr1.shift());
-	}
+	answer=answer.concat(arr1.concat(arr2));
+	//answer.concat(arr2);
 	return answer;
 };
 
