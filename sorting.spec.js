@@ -17,7 +17,7 @@ describe('Bubble Sort', function(){
 });
 
 
-describe('merge', function(){
+describe('Merge Function', function(){
 	it('is able to merge two arrays with one element', function(){
     	expect( merge([2],[1])).toEqual([1,2])
         // test the merging algorithm
@@ -33,7 +33,7 @@ describe('merge', function(){
 });
 
 
-describe('mergeSort', function() {
+describe('Merge Sort', function() {
   
   it('handles an empty array', function(){
         expect( mergeSort([]) ).toEqual( [] );
